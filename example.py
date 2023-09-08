@@ -99,7 +99,7 @@ def main() -> None:
     #       p-value = 2 × (area to the left of the t distribution)
     #   if t-statistic > 0:
     #       p-value = 2 x (area to the right of the t distribution)
-    my_pvalue = 2 * stdtr(df, -np.abs(my_tstat))
+    my_pvalue = 2 * stdtr(df, -np.abs(my_tstat))  # stdtr = Student t distribution cumulative distribution function
     print(f'p-value calculated by hand = {my_pvalue}')
     
     # Test #2 (failing to reject the null hypothesis)
